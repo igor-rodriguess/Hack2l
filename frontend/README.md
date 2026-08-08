@@ -4,21 +4,15 @@ Protótipo navegável da WHO, plataforma que conecta dores operacionais a talent
 
 ## Executar
 
-Na raiz do workspace:
+Na raiz do repositório, entre na pasta do frontend:
 
 ```bash
-npm run dev
-```
-
-Ou diretamente no projeto:
-
-```bash
-cd who-platform
+cd frontend
 npm install
 npm run dev
 ```
 
-Abra `http://localhost:5173`. Para validar a versão de produção:
+Abra `http://localhost:5173`. Para validar a versão de produção, ainda dentro de `frontend`:
 
 ```bash
 npm run build
