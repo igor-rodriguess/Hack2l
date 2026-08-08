@@ -1,0 +1,64 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #E8EDE6;
+  border: 1px solid #D1D5DB;
+  border-left: 3px solid #8BA888;
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  color: #1A1A1A;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.tag:hover {
+  background: #dce3d9;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.sm {
+  padding: 2px 8px;
+  font-size: 11px;
+}
+
+.md {
+  padding: 4px 10px;
+  font-size: 13px;
+}
+
+.lg {
+  padding: 6px 14px;
+  font-size: 15px;
+}
+
+.name {
+  font-weight: 500;
+}
+
+.level {
+  font-size: 0.85em;
+  color: #6B7280;
+  text-transform: capitalize;
+}
+
+.verified {
+  color: #2D6A4F;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+.remove {
+  background: none;
+  border: none;
+  color: #6B7280;
+  cursor: pointer;
+  padding: 0 2px;
+  font-size: 1.1em;
+  line-height: 1;
+  transition: color 0.15s;
+}
+
+.remove:hover {
+  color: #C44536;
+}

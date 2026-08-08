@@ -1,0 +1,243 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 260px;
+  background: #2D4A3E;
+  display: flex;
+  flex-direction: column;
+  z-index: 90;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.sidebarCollapsed {
+  width: 72px;
+}
+
+.logoArea {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  min-height: 64px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.logoMark {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 800;
+  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.5px;
+}
+
+.logoText {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.5px;
+  font-family: 'Inter', sans-serif;
+  white-space: nowrap;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.sidebarCollapsed .logoText {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.navSection {
+  flex: 1;
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  overflow-y: auto;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.2s ease;
+  position: relative;
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+}
+
+.navItem:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.navItemActive {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  font-weight: 600;
+}
+
+.navItemActive::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 24px;
+  background: #8BA888;
+  border-radius: 0 4px 4px 0;
+}
+
+.navIcon {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navLabel {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.sidebarCollapsed .navLabel {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebarCollapsed .navItemActive::before {
+  left: 0;
+}
+
+.bottomSection {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.collapseButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  border: none;
+  background: none;
+  width: 100%;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.collapseButton:hover {
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.collapseIcon {
+  transition: transform 0.3s ease;
+}
+
+.collapseIconFlipped {
+  transform: rotate(180deg);
+}
+
+.collapseLabel {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.sidebarCollapsed .collapseLabel {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+
+.userAvatar {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  border-radius: 50%;
+  background: #3D6B5A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+
+.userDetails {
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.sidebarCollapsed .userDetails {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.userName {
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'Inter', sans-serif;
+}
+
+.userRole {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+  white-space: nowrap;
+  font-family: 'Inter', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}

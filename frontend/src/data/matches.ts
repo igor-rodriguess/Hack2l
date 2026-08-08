@@ -1,0 +1,176 @@
+import type { Match } from '../types';
+
+export const matches: Match[] = [
+  // Matches for Demand 001 (CLP/Inversores - Automação Industrial)
+  {
+    id: 'match-001',
+    talentId: 'talent-001', // Carlos Eduardo Silva
+    demandId: 'demand-001',
+    score: 96,
+    strengths: [
+      'Experiência direta com CLP Siemens S7-1200 e S7-1500, exatamente os modelos solicitados',
+      'Domínio comprovado em inversores de frequência WEG, com vídeo demonstrando configuração',
+      'Ampla experiência com redes Profinet e integração SCADA usando WinCC',
+      'Certificação Siemens validada e NR-10 em dia',
+      'Projeto anterior em indústria automotiva com resultado mensurável (35% redução de setup)',
+    ],
+    limitations: [
+      'Experiência com inversores é majoritariamente WEG, pode precisar de familiarização caso use outra marca',
+    ],
+    evidence: [
+      'Vídeo "Programação de CLP Siemens S7-1200 para controle de esteira" demonstra domínio completo da plataforma TIA Portal',
+      'Vídeo "Integração SCADA com rede Profinet" mostra exatamente o tipo de integração exigida',
+      'Projeto de automação de linha de envase com 12 estações é diretamente comparável ao escopo de 8 estações da demanda',
+    ],
+    justification: 'Perfil com aderência excepcional à demanda. Possui todas as competências técnicas solicitadas, comprovadas por vídeos práticos e projetos anteriores. A experiência em automação de linhas de produção automotivas torna este candidato particularmente relevante para o contexto da vaga.',
+    skills: { score: 98, label: 'Competências Técnicas', details: 'Domina todas as 5 competências requeridas, com nível avançado em CLP e SCADA' },
+    tools: { score: 95, label: 'Ferramentas', details: 'Experiência com TIA Portal, WinCC, Step 7 e Factory I/O - exatamente o ecossistema Siemens solicitado' },
+    availability: { score: 100, label: 'Disponibilidade', details: 'Disponível imediatamente para projetos em período integral' },
+    communication: { score: 90, label: 'Comunicação', details: 'Vídeos demonstram explicação clara e didática dos processos técnicos' },
+    safety: { score: 95, label: 'Segurança', details: 'NR-10 Básico e SEP, NR-12, e procedimentos LOTO documentados' },
+    precision: { score: 92, label: 'Precisão', details: 'Projetos anteriores com resultados mensuráveis indicam alto nível de precisão' },
+    speed: { score: 88, label: 'Velocidade', details: 'Experiência em projetos com prazo definido (6 meses para 12 estações)' },
+    innovation: { score: 90, label: 'Inovação', details: 'Uso de Factory I/O para simulação e validação antes da implementação' },
+    revealed: false,
+    invited: false,
+    status: 'pending',
+  },
+  {
+    id: 'match-002',
+    talentId: 'talent-005', // Lucas Henrique Nascimento
+    demandId: 'demand-001',
+    score: 72,
+    strengths: [
+      'Conhecimento em integração de sistemas industriais e protocolos de comunicação (MQTT, OPC-UA)',
+      'Experiência com dashboards de produção que complementa o sistema SCADA',
+      'Capacidade de desenvolver soluções IoT que podem agregar valor ao projeto',
+    ],
+    limitations: [
+      'Não possui experiência direta com programação de CLP Siemens',
+      'Não tem certificação NR-10, necessária para o projeto',
+      'Experiência com inversores de frequência não comprovada nos vídeos',
+      'Perfil mais voltado para desenvolvimento de software do que automação de chão de fábrica',
+    ],
+    evidence: [
+      'Vídeo "Integração de sensores IoT com gateway Raspberry Pi" demonstra entendimento de protocolos industriais',
+      'Projeto de sistema MES indica familiaridade com ambiente industrial',
+    ],
+    justification: 'Perfil com competências complementares à demanda, mas sem experiência direta nas tecnologias core exigidas (CLP Siemens, inversores). Poderia atuar como suporte na integração do sistema SCADA com camadas superiores, mas não como responsável principal pela programação de CLP.',
+    skills: { score: 55, label: 'Competências Técnicas', details: 'Possui competências em IoT e integração, mas faltam habilidades específicas de CLP e inversores' },
+    tools: { score: 45, label: 'Ferramentas', details: 'Não utiliza TIA Portal ou ferramentas Siemens; ferramentas são de desenvolvimento web/IoT' },
+    availability: { score: 90, label: 'Disponibilidade', details: 'Disponível para projetos remotos ou híbridos' },
+    communication: { score: 88, label: 'Comunicação', details: 'Vídeos bem estruturados e documentação clara' },
+    safety: { score: 40, label: 'Segurança', details: 'Conhecimento em segurança de dados, mas sem certificações NR obrigatórias' },
+    precision: { score: 75, label: 'Precisão', details: 'Demonstra rigor em projetos de software, mas contexto diferente' },
+    speed: { score: 80, label: 'Velocidade', details: 'Projetos entregues dentro do prazo em sua área de atuação' },
+    innovation: { score: 92, label: 'Inovação', details: 'Alto potencial de inovação com soluções IoT e dashboards' },
+    revealed: false,
+    invited: false,
+    status: 'pending',
+  },
+  // Matches for Demand 002 (Subestação - Eletrotécnica)
+  {
+    id: 'match-003',
+    talentId: 'talent-002', // Ana Beatriz Ferreira
+    demandId: 'demand-002',
+    score: 94,
+    strengths: [
+      'Engenheira eletricista com CREA ativo, requisito obrigatório da demanda',
+      'Experiência comprovada em projeto de subestações e dimensionamento de quadros',
+      'Domina EPLAN, uma das ferramentas solicitadas para documentação técnica',
+      'Certificação em termografia, item diferencial mencionado na demanda',
+      'NR-10 SEP em dia, requisito obrigatório',
+    ],
+    limitations: [
+      'Experiência documentada é em planta farmacêutica, não industrial pesada',
+      'Disponibilidade apenas a partir de agosto/2026, pode impactar o cronograma',
+    ],
+    evidence: [
+      'Vídeo "Montagem de quadro de distribuição com barramento blindado" demonstra experiência prática em quadros elétricos industriais',
+      'Vídeo "Inspeção termográfica em subestação industrial" comprova experiência com termografia em subestações',
+      'Projeto de planta farmacêutica incluiu subestação 13.8kV, escopo similar ao solicitado',
+    ],
+    justification: 'Perfil com altíssima aderência. Atende todos os requisitos obrigatórios (CREA, NR-10 SEP, projeto elétrico) e também o diferencial de termografia. A experiência em projeto de subestação de mesmo nível de tensão (13.8kV) é particularmente relevante.',
+    skills: { score: 96, label: 'Competências Técnicas', details: 'Domina projeto de subestações MT/BT, quadros elétricos e análise de qualidade de energia' },
+    tools: { score: 95, label: 'Ferramentas', details: 'EPLAN e AutoCAD Electrical, câmera termográfica profissional' },
+    availability: { score: 75, label: 'Disponibilidade', details: 'Disponível a partir de agosto/2026 - verificar compatibilidade com cronograma' },
+    communication: { score: 92, label: 'Comunicação', details: 'Documentação técnica de alto nível, vídeos explicativos claros' },
+    safety: { score: 98, label: 'Segurança', details: 'NR-10 SEP, NR-35, NR-33 e APR - todas as certificações necessárias' },
+    precision: { score: 95, label: 'Precisão', details: 'Projeto de planta farmacêutica exige alto rigor técnico e normativo' },
+    speed: { score: 85, label: 'Velocidade', details: 'Projeto anterior de 8 meses indica cadência compatível' },
+    innovation: { score: 82, label: 'Inovação', details: 'Uso de termografia preditiva integrada ao comissionamento' },
+    revealed: false,
+    invited: false,
+    status: 'pending',
+  },
+  // Matches for Demand 003 (Manutenção Preditiva - Siderúrgica)
+  {
+    id: 'match-004',
+    talentId: 'talent-004', // Fernanda Oliveira Costa
+    demandId: 'demand-003',
+    score: 95,
+    strengths: [
+      'Certificação em Análise de Vibração Nível 2 (ISO 18436-2), exatamente o requisito da demanda',
+      'Experiência comprovada com coletor SKF, ferramenta mencionada na demanda',
+      'Domínio de alinhamento a laser com Pruftechnik ROTALIGN',
+      'Experiência em planta siderúrgica, mesmo contexto industrial da demanda',
+      'Todas as NRs exigidas: NR-10, NR-33 e NR-35',
+      'Projeto anterior com 450 equipamentos rotativos, escala maior que os 200 da demanda',
+    ],
+    limitations: [
+      'Horário flexível pode necessitar negociação para adequação ao regime de turnos 24/7',
+    ],
+    evidence: [
+      'Vídeo "Análise de vibração em motor elétrico de 500cv" demonstra exatamente o tipo de equipamento mencionado na demanda',
+      'Vídeo "Alinhamento a laser de conjunto motor-bomba" comprova habilidade prática em alinhamento',
+      'Projeto de implantação de preditiva em siderúrgica com 450 equipamentos é diretamente aplicável',
+    ],
+    justification: 'Perfil praticamente perfeito para a demanda. A experiência em implantação de programa preditivo em siderúrgica com escala ainda maior que a solicitada, combinada com todas as certificações técnicas e de segurança exigidas, torna esta candidata a opção mais qualificada.',
+    skills: { score: 98, label: 'Competências Técnicas', details: 'Análise de vibração nível 2, termografia, alinhamento a laser - todas as competências core' },
+    tools: { score: 96, label: 'Ferramentas', details: 'SKF Microlog (exatamente o solicitado), Pruftechnik ROTALIGN, câmera termográfica' },
+    availability: { score: 85, label: 'Disponibilidade', details: 'Disponível para contratos de manutenção, necessita alinhar regime de turnos' },
+    communication: { score: 88, label: 'Comunicação', details: 'Relatórios técnicos estruturados, apresentação clara em vídeos' },
+    safety: { score: 100, label: 'Segurança', details: 'NR-10, NR-33 e NR-35 em dia, além de procedimentos de PT e LOTO' },
+    precision: { score: 95, label: 'Precisão', details: 'Redução de 60% em paradas não programadas comprova diagnóstico preciso' },
+    speed: { score: 88, label: 'Velocidade', details: 'Experiência com rotas de inspeção otimizadas para grande volume de equipamentos' },
+    innovation: { score: 85, label: 'Inovação', details: 'Integração de múltiplas técnicas preditivas para diagnóstico mais assertivo' },
+    revealed: false,
+    invited: false,
+    status: 'pending',
+  },
+  {
+    id: 'match-005',
+    talentId: 'talent-001', // Carlos Eduardo Silva
+    demandId: 'demand-003',
+    score: 48,
+    strengths: [
+      'NR-10 em dia, um dos requisitos de segurança',
+      'Experiência com manutenção preventiva de equipamentos industriais',
+      'Conhecimento em ambiente industrial e chão de fábrica',
+    ],
+    limitations: [
+      'Não possui certificação em análise de vibração, requisito principal da demanda',
+      'Sem experiência com alinhamento a laser ou termografia',
+      'Perfil voltado para automação, não manutenção preditiva',
+      'Falta NR-33 e NR-35, obrigatórias para a função',
+      'Não possui coletor de vibração ou equipamentos de preditiva',
+    ],
+    evidence: [
+      'Habilidade em manutenção preventiva (nível 3) indica conhecimento básico, mas insuficiente para a função',
+    ],
+    justification: 'Perfil com baixa aderência à demanda. Embora tenha experiência industrial, suas competências são focadas em automação (CLP, SCADA) e não em manutenção preditiva. Não possui as certificações técnicas específicas (vibração nível 2) nem todas as NRs obrigatórias.',
+    skills: { score: 30, label: 'Competências Técnicas', details: 'Manutenção preventiva básica, sem competências em vibração, termografia ou alinhamento' },
+    tools: { score: 20, label: 'Ferramentas', details: 'Não possui ferramentas de manutenção preditiva (coletor de vibração, alinhador)' },
+    availability: { score: 100, label: 'Disponibilidade', details: 'Disponível imediatamente' },
+    communication: { score: 85, label: 'Comunicação', details: 'Boa capacidade de comunicação demonstrada nos vídeos' },
+    safety: { score: 50, label: 'Segurança', details: 'Possui NR-10 e NR-12, mas faltam NR-33 e NR-35 obrigatórias' },
+    precision: { score: 45, label: 'Precisão', details: 'Precisão demonstrada em automação, não transferível diretamente para preditiva' },
+    speed: { score: 60, label: 'Velocidade', details: 'Experiência em projetos com prazo, mas contexto diferente' },
+    innovation: { score: 55, label: 'Inovação', details: 'Poderia agregar em automação de coleta de dados preditivos' },
+    revealed: false,
+    invited: false,
+    status: 'pending',
+  },
+];
+
+export default matches;

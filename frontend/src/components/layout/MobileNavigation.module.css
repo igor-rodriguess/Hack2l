@@ -1,0 +1,107 @@
+.mobileNav {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-top: 1px solid #D1D5DB;
+  padding: 4px 0;
+  padding-bottom: max(4px, env(safe-area-inset-bottom));
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #6B7280;
+  font-size: 10px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  transition: color 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.tab:active {
+  transform: scale(0.95);
+}
+
+.tabActive {
+  color: #2D4A3E;
+  font-weight: 600;
+}
+
+.tabIcon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.activeIndicator {
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #2D4A3E;
+  animation: indicatorIn 0.3s ease;
+}
+
+@keyframes indicatorIn {
+  from {
+    transform: translateX(-50%) scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+  }
+}
+
+.badge {
+  position: absolute;
+  top: -2px;
+  right: -6px;
+  min-width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background: #C44536;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+  font-family: 'Inter', sans-serif;
+  line-height: 1;
+}
+
+.tabLabel {
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .mobileNav {
+    display: block;
+  }
+}

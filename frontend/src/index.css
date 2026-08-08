@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Sora:wght@500;600;700;800&display=swap');
+
+*{box-sizing:border-box}
+html{min-width:320px;background:#faf9f6;color:#1d211e;font-family:'Instrument Sans',sans-serif;font-size:15px;line-height:1.55;text-rendering:optimizeLegibility}
+body{margin:0;min-width:320px;min-height:100dvh}
+button,input,textarea,select{font:inherit}
+button,a{color:inherit}
+button{cursor:pointer}
+a{text-decoration:none}
+#root{width:100%;min-height:100dvh}
+::selection{background:#dfe8df;color:#334837}
+:focus-visible{outline:3px solid rgba(51,72,55,.28);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
